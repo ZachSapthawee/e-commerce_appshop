@@ -1,11 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:khwanfaapp/Pages/cast.dart';
+import 'package:khwanfaapp/Pages/cart.dart';
 import 'package:khwanfaapp/Pages/index1.dart';
 import 'package:khwanfaapp/Pages/profile.dart';
+import 'package:khwanfaapp/Pages/testview.dart';
+import 'package:khwanfaapp/my_custom_icons_icons.dart';
 
-import 'Product.dart';
+import 'ProductItem.dart';
+import 'ShowItem.dart';
 
 
 
@@ -27,8 +30,8 @@ class _indexState extends State<index>{
 //    Text('Index 2 : 3'),
 //    Text('Index 3 : 4'),
     FeedPage(),
-    Product(),
-    CastShopping(),
+    ProductItem(),
+    CartShopping(),
     Profile(),
 
   ];
@@ -89,14 +92,15 @@ class _indexState extends State<index>{
             ),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.local_grocery_store),
+            icon: Icon(Icons.local_grocery_store,
+            ),
             title: Text(
                 'รถเข็น',
                 style: textnavStyle,
             ),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle),
+            icon: Icon(Icons.person),
             title: Text(
                 'บัญชีผู้ใช้',
                 style: textnavStyle,

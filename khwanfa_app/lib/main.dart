@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:khwanfaapp/Pages/index1.dart';
 import 'package:khwanfaapp/Pages/index.dart';
 
 void main() => runApp(MyApp());
