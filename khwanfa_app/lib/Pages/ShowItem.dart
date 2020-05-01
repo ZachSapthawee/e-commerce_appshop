@@ -92,9 +92,18 @@ class _ShoeitemState extends State<Shoeitem> {
 }
 
 class TabItem extends StatelessWidget {
-  TabItem({this.color});
-
+  final String image, title, subTitle, url;
   final Color color;
+
+
+  TabItem({Key key,
+    @required this.image,
+    @required this.title,
+    @required this.subTitle,
+    @required this.url,
+    @required this.color
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -103,55 +112,52 @@ class TabItem extends StatelessWidget {
           color: color,
         child: Column(
           children: <Widget>[
-            Image.network("https://taladchumchon.com/wp-content/uploads/2018/11/IMG_7936.jpg"),
+            ImageTabItem(),
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: Container(
                 child: Column(
                   children: <Widget>[
-                    Text('ข้าวไร้เบอร์รี่ จากการผสมข้ามพันธุ์llllllkkk',
-                      overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                      ),
-                    ),
-
-                    Text('ข้าวไรซ์เบอรี่ (Riceberry) เป็นข้าวที่เกิดขึ้นใหม่ จากการผสมข้ามพันธุ์ระหว่างข้าวเจ้าหอมนิล',
-                      style: TextStyle(
-                        fontSize: 15,
-                      ),
-                    ),
+                    TitleTabItem(),
+                    SubTitleTabItem(),
                   ],
                 ),
               ),
             ),
-
-//            Expanded(
-//              child: Container(
-//                child: Column(
-//                  children: <Widget>[
-//                    Text('ข้าวไร้เบอร์รี่',
-//                      style: TextStyle(
-//                        fontWeight: FontWeight.bold,
-//                        fontSize: 20,
-//                      ),
-//                    ),
-//                    Text('ข้าวไรซ์เบอรี่ (Riceberry) เป็นข้าวที่เกิดขึ้นใหม่ จากการผสมข้ามพันธุ์ระหว่างข้าวเจ้าหอมนิล',
-//                      style: TextStyle(
-//                        fontSize: 20,
-//                      ),
-//                    ),
-//                  ],
-//                ),
-//              ),
-//            ),
           ],
         ),
       ),
     );
   }
+
+  Widget ImageTabItem(){
+    return Image.network(
+        "https://taladchumchon.com/wp-content/uploads/2018/11/IMG_7936.jpg"
+    );
+  }
+
+  Widget TitleTabItem(){
+    return Text(
+      'ข้าวไร้เบอร์รี่ จากการผสมข้ามพันธุ์llllllkkk',
+//                      title,
+      overflow: TextOverflow.ellipsis,
+      style: TextStyle(
+        fontWeight: FontWeight.bold,
+        fontSize: 20,
+      ),
+    );
+  }
+  Widget SubTitleTabItem(){
+    return Text(
+      'ข้าวไรซ์เบอรี่ (Riceberry) เป็นข้าวที่เกิดขึ้นใหม่ จากการผสมข้ามพันธุ์ระหว่างข้าวเจ้าหอมนิล',
+//                      subTitle,
+      style: TextStyle(
+        fontSize: 15,
+      ),
+    );
+  }
 }
+
 
 
 class SlidingCard extends StatelessWidget {

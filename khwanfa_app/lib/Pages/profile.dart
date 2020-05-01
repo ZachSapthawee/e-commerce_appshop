@@ -1,6 +1,8 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:khwanfaapp/Pages/order_list.dart';
 
 import 'OrderStatus.dart';
 
@@ -14,7 +16,26 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        children: <Widget>[_Profile_Name(), _Navbarprofile()],
+        children: <Widget>[
+          _Profile_Name(),
+          _Navbarprofile(),
+          Container(
+            child: CachedNetworkImage(
+              imageUrl: "http://via.placeholder.com/200x150",
+              imageBuilder: (context, imageProvider) => Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: imageProvider,
+                      fit: BoxFit.cover,
+                      colorFilter:
+                      ColorFilter.mode(Colors.red, BlendMode.colorBurn)),
+                ),
+              ),
+              placeholder: (context, url) => CircularProgressIndicator(),
+              errorWidget: (context, url, error) => Icon(Icons.error),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -64,7 +85,12 @@ class _ProfileState extends State<Profile> {
                       width: 100,
                       alignment: Alignment.center,
                       child: InkWell(
-                        onTap: () => print("Container pressed"),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Order_list()),
+                          );
+                        },
                         // handle your onTap here
                         child: Container(
                           height: 80,

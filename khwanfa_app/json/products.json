@@ -1,65 +1,41 @@
 [
   {
-    "product_Id": 1,
-    "title": "accusamus beatae ad facilis cum similique qui sunt1111111",
-    "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "cast":"499",
-    "url": "https://via.placeholder.com/600/92c952",
-    "thumbnailUrl": "https://via.placeholder.com/150/92c952",
-    "type_id": "1",
-    "shop_id": "1"
+    "id": 1,
+    "product_name": "iPhone 11",
+    "product_detail": "64G",
+    "type_id": 1,
+    "type_name": "Apple product",
+    "shop_id": 1,
+    "shop_name": "Apple store",
+    "cost": 32000,
+    "status": 1,
+    "saleprice": 32000,
+    "imagename": "https://ase.kku.ac.th/api/v1/001.jpg"
   },
   {
-    "product_Id": 2,
-    "title": "reprehenderit est deserunt velit ipsam22222222",
-    "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "cast":"499",
-    "url": "https://via.placeholder.com/600/771796",
-    "thumbnailUrl": "https://via.placeholder.com/150/771796",
-    "type_id": "1",
-    "shop_id": "2"
-
+    "id": 2,
+    "product_name": "iPhone 11",
+    "product_detail": "128G",
+    "type_id": 1,
+    "type_name": "Apple product",
+    "shop_id": null,
+    "shop_name": null,
+    "cost": 48000,
+    "status": 1,
+    "saleprice": 48000,
+    "imagename": "https://ase.kku.ac.th/api/v1/001.jpg"
   },
   {
-    "product_Id": 3,
-    "title": "accusamus beatae ad facilis cum similique qui sunt333333",
-    "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "cast":"499",
-    "url": "https://via.placeholder.com/600/92c952",
-    "thumbnailUrl": "https://via.placeholder.com/150/92c952",
-    "type_id": "1",
-    "shop_id": "1"
-  },
-  {
-    "product_Id": 4,
-    "title": "reprehenderit est deserunt velit ipsam44444",
-    "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "cast":"499",
-    "url": "https://via.placeholder.com/600/771796",
-    "thumbnailUrl": "https://via.placeholder.com/150/771796",
-    "type_id": "1",
-    "shop_id": "2"
-
-  },
-  {
-    "product_Id": 5,
-    "title": "accusamus beatae ad facilis cum similique qui sunt555555",
-    "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "cast":"499",
-    "url": "https://via.placeholder.com/600/92c952",
-    "thumbnailUrl": "https://via.placeholder.com/150/92c952",
-    "type_id": "1",
-    "shop_id": "1"
-  },
-  {
-    "product_Id": 6,
-    "title": "reprehenderit est deserunt velit ipsam666666",
-    "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "cast":"499",
-    "url": "https://via.placeholder.com/600/771796",
-    "thumbnailUrl": "https://via.placeholder.com/150/771796",
-    "type_id": "1",
-    "shop_id": "2"
-
+    "id": 3,
+    "product_name": "iPhone 11",
+    "product_detail": "256G",
+    "type_id": 1,
+    "type_name": "Apple product",
+    "shop_id": null,
+    "shop_name": null,
+    "cost": 52000,
+    "status": 1,
+    "saleprice": 52000,
+    "imagename": "https://ase.kku.ac.th/api/v1/001.jpg"
   }
 ]

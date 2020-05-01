@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:khwanfaapp/my_custom_icons_icons.dart';
 
+import 'Selected_Bank.dart';
 import 'list_address.dart';
 
 class CheckoutItem extends StatelessWidget {
@@ -47,7 +48,7 @@ class CheckoutItem extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => list_address()),
+                    MaterialPageRoute(builder: (context) => Selected_Bank()),
                   );
                 },
               ),

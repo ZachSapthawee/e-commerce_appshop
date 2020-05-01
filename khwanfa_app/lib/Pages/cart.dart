@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-import 'package:khwanfaapp/model/Products.dart';
+import 'package:khwanfaapp/models/Products.dart';
 
 import 'Checkout.dart';
 import 'function/Counter.dart';

@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:khwanfaapp/Pages/cart.dart';
-import 'package:khwanfaapp/Pages/index1.dart';
+import 'package:khwanfaapp/Pages/feed/feed.dart';
 import 'package:khwanfaapp/Pages/profile.dart';
 import 'package:khwanfaapp/Pages/testview.dart';
 import 'package:khwanfaapp/my_custom_icons_icons.dart';
@@ -69,13 +69,18 @@ class _indexState extends State<index>{
 //          backgroundColor: Colors.purple[900],
 //      ),
       body: _widgetOptions[_selectedIndex],
-
+        floatingActionButton: FloatingActionButton(
+          onPressed: (){},
+          child: Icon(Icons.android),
+          backgroundColor: Colors.blue
+          ,
+        ),
 
       bottomNavigationBar: BottomNavigationBar(
         iconSize: 25,
-        backgroundColor: Colors.purple[900],
+        backgroundColor: Colors.white,
         type: BottomNavigationBarType.fixed,
-        unselectedItemColor: Colors.purple[50],
+        unselectedItemColor: Colors.purple[100],
         items:[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -107,8 +112,8 @@ class _indexState extends State<index>{
             ),
           ),
         ],
-//        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.white,
+        currentIndex: _selectedIndex,
+        selectedItemColor: Colors.purple[900],
         onTap: _onItemTapped,
       ),
     );
