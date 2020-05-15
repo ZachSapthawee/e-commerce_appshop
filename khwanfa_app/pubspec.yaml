@@ -28,6 +28,9 @@ dependencies:
   flutter_cache_store: ^0.7.2
   cached_network_image: ^2.1.0+1
   http: ^0.12.0+4
+  flutter_shimmer: ^1.2.0
+  font_awesome_flutter: ^8.8.1
+  rxdart: ^0.24.0
 
 dev_dependencies:
   flutter_test:
@@ -72,6 +75,8 @@ flutter:
     - images/drawable-xxxhdpi/slideview_two.png
     - images/drawable-xxxhdpi/slideview_three.png
     - images/drawable-xxxhdpi/mail_color.png
+    - images/drawable-xxxhdpi/logo.png
+    - images/drawable-xxxhdpi/bg_login.png
 #    - images/drawable-hdpi/slideimage_cover.png
 #    - images/drawable-ldpi/slideimage_cover.png
 #    - images/drawable-mdpi/slideimage_cover.png

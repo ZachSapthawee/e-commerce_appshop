@@ -1,7 +1,10 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:khwanfaapp/Pages/Checkout.dart';
-import 'package:khwanfaapp/Pages/cart.dart';
+import 'package:khwanfaapp/Pages/Cart.dart';
+
+import 'testview.dart';
 
 class Shoeitem extends StatefulWidget {
   @override
@@ -34,7 +37,7 @@ class _ShoeitemState extends State<Shoeitem> {
                   ],
                 ),
               ),
-              TabItem(color: Colors.white70)
+              TabItem()
             ],
           ),
         ),
@@ -50,10 +53,10 @@ class _ShoeitemState extends State<Shoeitem> {
                   borderRadius: BorderRadius.circular(5),
                 ),
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => CartShopping()),
-                  );
+//                  Navigator.push(
+//                    context,
+//                    MaterialPageRoute(builder: (context) => CartShopping()),
+//                  );
                 },
               ),
               Container(
@@ -92,24 +95,24 @@ class _ShoeitemState extends State<Shoeitem> {
 }
 
 class TabItem extends StatelessWidget {
-  final String image, title, subTitle, url;
-  final Color color;
+//  final String image, title, subTitle, url;
+//  final Color color;
 
 
-  TabItem({Key key,
-    @required this.image,
-    @required this.title,
-    @required this.subTitle,
-    @required this.url,
-    @required this.color
-  }) : super(key: key);
+//  TabItem({Key key,
+//    @required this.image,
+//    @required this.title,
+//    @required this.subTitle,
+//    @required this.url,
+//    @required this.color
+//  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
           height: 60,
-          color: color,
+          color: Colors.white70,
         child: Column(
           children: <Widget>[
             ImageTabItem(),
@@ -131,7 +134,8 @@ class TabItem extends StatelessWidget {
   }
 
   Widget ImageTabItem(){
-    return Image.network(
+    return CachedNetworkImage(
+        imageUrl :
         "https://taladchumchon.com/wp-content/uploads/2018/11/IMG_7936.jpg"
     );
   }
@@ -229,7 +233,7 @@ class CardContent extends StatelessWidget {
             children: <Widget>[
               RaisedButton(
                 color: Color(0xFF162A49),
-                child: Text('ใส่ตะกร้า'),
+                child: Text('เพิ่มลงรถเข็น'),
                 textColor: Colors.white,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(32),

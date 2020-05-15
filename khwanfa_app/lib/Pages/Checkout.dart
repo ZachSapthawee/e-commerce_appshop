@@ -7,6 +7,18 @@ import 'Selected_Bank.dart';
 import 'list_address.dart';
 
 class CheckoutItem extends StatelessWidget {
+  final String image, title, subTitle, url;
+  final int cost;
+  CheckoutItem(
+      {Key key,
+        @required this.image,
+        @required this.title,
+        @required this.subTitle,
+        @required this.url,
+        @required this.cost})
+//      @required this.color})
+      : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +43,7 @@ class CheckoutItem extends StatelessWidget {
             children: <Widget>[
               Spacer(),
               Text(
-                '0.00 \฿',
+                '${cost} \฿',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
@@ -245,7 +257,7 @@ class CheckoutItem extends StatelessWidget {
                         borderRadius: BorderRadius.vertical(
                             top: Radius.circular(5), bottom: Radius.circular(5)),
                         child: Image.network(
-                          "https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/26308762_1895633190766583_5435136789301952512_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=111&_nc_ohc=cvHMiTKj25AAX-GU66S&oh=b1e409cddb9697b171661f9382f18751&oe=5EBC9CC8",
+                          image,
                           width: 100,
                           height: 100,
                         ),
@@ -261,7 +273,8 @@ class CheckoutItem extends StatelessWidget {
                             EdgeInsets.only(top: 5.0, right: 10.0),
                             alignment: Alignment.topLeft,
                             child: Text(
-                              'ข้าวไรเบอร์รี่',
+                              title,
+//                              'ข้าวไรเบอร์รี่',
 //                        "${items[index].toString()}",
                               overflow: TextOverflow.ellipsis,
                               style: TextStyle(
@@ -274,7 +287,8 @@ class CheckoutItem extends StatelessWidget {
                             alignment: Alignment.topLeft,
                             margin: EdgeInsets.only( right: 10.0),
                             child: Text(
-                              'ข้าวไรเบอร์รี่ dsgvsfvcfdsafvsdfdeszfdzseewafefawf',
+                              subTitle,
+//                              'ข้าวไรเบอร์รี่ dsgvsfvcfdsafvsdfdeszfdzseewafefawf',
                               softWrap: true,
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
@@ -285,7 +299,7 @@ class CheckoutItem extends StatelessWidget {
                             margin: EdgeInsets.only(
                                 top: 20.0, bottom: 10.0),
                             child: Text(
-                              '\฿ 499.00 ',
+                              '\฿ ${cost}',
 //                            "${productsList[id].price}",
 //                          style: Theme.of(context).textTheme.title,
                               style: TextStyle(
@@ -326,7 +340,7 @@ class CheckoutItem extends StatelessWidget {
                       child: Container(
                         margin: EdgeInsets.only(left: 10.0, right: 10.0,bottom: 10.0),
                         alignment: Alignment.topRight,
-                        child: Text('1 จำนวนสินค้า ,ยอดรวมสินค้า : \฿ 499.00'),
+                        child: Text('1 จำนวนสินค้า ,ยอดรวมสินค้า : \฿ ${cost}'),
                       ),
                     ),
                   ],

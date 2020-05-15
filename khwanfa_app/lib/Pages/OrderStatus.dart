@@ -24,52 +24,47 @@ class _OderStatusState extends State<OderStatus> {
         ),
         backgroundColor: Colors.white,
       ),
-      body: Container(
-        child: Column(
-          children: <Widget>[
-            Container(
-              height: 150,
-              width: MediaQuery.of(context).size.width,
-              color: Colors.blue,
-              child: Container(
-                child: Text(
-                  'รห'
-                ),
-              ),
-
+      body: Column(
+        children: <Widget>[
+          Container(
+            height: 150,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.blue,
+            child: Container(
+              child: Text('รห'),
             ),
-
-            Container(
-              margin: EdgeInsets.all(20.0),
-              child: Column(
-                children: <Widget>[
-                  timelineRow('พัสดุถึงศูนย์คัดแยก','None - นนทบุรี'),
-                  timelineRow('ไปรษณีย์เข้ารับพัสดุแล้ว','ไปรษณีย์นนทบุรี - นนทบุรี'),
-                  timelineRow('พัสดุถึงศูนย์คัดแยก','ศูนย์กระจายสินค้านนทบุรี - นนทบุรี'),
-                  timelineRow('พัสดุถึงศูนย์คัดแยก','หนองคาย - หนองคาย'),
-                  timelineRow('จุดคัดแยกเมืองหนองคาย','เมืองหนองคาย 1 - หนองคาย'),
-                  timelineRow('นำจ่าย','เมืองหนองคาย 1 - หนองคาย'),
-                  timelineLastRow('ปลายทางได้รับเรียบร้อยแล้ว','ผู้รับสินค้า: Zak Sapthawee'),
-                ],
-              ),
+          ),
+          Expanded(
+//            margin: EdgeInsets.all(20.0),
+            child: Column(
+              children: <Widget>[
+                timelineRow('พัสดุถึงศูนย์คัดแยก', 'None - นนทบุรี'),
+                timelineRow('ไปรษณีย์เข้ารับพัสดุแล้ว', 'ไปรษณีย์นนทบุรี - นนทบุรี'),
+                timelineRow('พัสดุถึงศูนย์คัดแยก','ศูนย์กระจายสินค้านนทบุรี - นนทบุรี'),
+                timelineRow('พัสดุถึงศูนย์คัดแยก', 'หนองคาย - หนองคาย'),
+                timelineRow('จุดคัดแยกเมืองหนองคาย', 'เมืองหนองคาย 1 - หนองคาย'),
+                timelineRow('นำจ่าย', 'เมืองหนองคาย 1 - หนองคาย'),
+                timelineLastRow('ปลายทางได้รับเรียบร้อยแล้ว',
+                    'ผู้รับสินค้า: Zak Sapthawee'),
+              ],
             ),
-
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
+
   Widget orderTimeLine() {
     return Container(
       decoration: BoxDecoration(color: Colors.white),
       margin: EdgeInsets.only(
 //        bottom: SizeConfig.safeBlockHorizontal * 3,
-      ),
+          ),
       padding: EdgeInsets.only(
 //        top: SizeConfig.safeBlockHorizontal * 3,
 //        left: SizeConfig.safeBlockHorizontal * 7,
 //        bottom: SizeConfig.safeBlockHorizontal * 3,
-      ),
+          ),
       child: Column(
         children: <Widget>[
 //          timelineRow("Order Confirmed", orderDateTime),
@@ -122,15 +117,14 @@ class _OderStatusState extends State<OderStatus> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text('${title}\n ${subTile}',
-                  style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.black54)),
+                  style: TextStyle(fontSize: 14, color: Colors.black54)),
             ],
           ),
         ),
       ],
     );
   }
+
   Widget timelineLastRow(String title, String subTile) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -171,9 +165,7 @@ class _OderStatusState extends State<OderStatus> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text('${title}\n ${subTile}',
-                  style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.black54)),
+                  style: TextStyle(fontSize: 14, color: Colors.black54)),
             ],
           ),
         ),

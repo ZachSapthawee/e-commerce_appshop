@@ -16,6 +16,10 @@
 ///         Author:    P.J. Onori
 ///         License:   SIL (http://scripts.sil.org/OFL)
 ///         Homepage:  http://somerandomdude.com/work/iconic/
+/// * Elusive, Copyright (C) 2013 by Aristeides Stathopoulos
+///         Author:    Aristeides Stathopoulos
+///         License:   SIL (http://scripts.sil.org/OFL)
+///         Homepage:  http://aristeides.com/
 /// * Material Design Icons, Copyright (C) Google, Inc
 ///         Author:    Google
 ///         License:   Apache 2.0 (https://www.apache.org/licenses/LICENSE-2.0)
@@ -40,14 +44,14 @@
 ///         Author:    Sam Collins
 ///         License:   MIT (http://opensource.org/licenses/mit-license.php)
 ///         Homepage:  http://zocial.smcllns.com/
-/// * Elusive, Copyright (C) 2013 by Aristeides Stathopoulos
-///         Author:    Aristeides Stathopoulos
-///         License:   SIL (http://scripts.sil.org/OFL)
-///         Homepage:  http://aristeides.com/
 /// * Linecons, Copyright (C) 2013 by Designmodo
 ///         Author:    Designmodo for Smashing Magazine
 ///         License:   CC BY ()
 ///         Homepage:  http://designmodo.com/linecons-free/
+/// * MFG Labs, Copyright (C) 2012 by Daniel Bruce
+///         Author:    MFG Labs
+///         License:   SIL (http://scripts.sil.org/OFL)
+///         Homepage:  http://www.mfglabs.com/
 ///
 import 'package:flutter/widgets.dart';
 
@@ -58,6 +62,7 @@ class MyCustomIcons {
   static const _kFontPkg = null;
 
   static const IconData box = IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData facebook = IconData(0xe801, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData add_shopping_cart = IconData(0xe814, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData airport_shuttle = IconData(0xe823, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData local_shipping = IconData(0xe9f2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
@@ -95,6 +100,7 @@ class MyCustomIcons {
   static const IconData paper_plane_1 = IconData(0xecfd, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData credit_card_1 = IconData(0xed15, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData megaphone_1 = IconData(0xed18, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData facebook_1 = IconData(0xed33, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData user_outline = IconData(0xed3d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData user_2 = IconData(0xed3e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData picture_outline = IconData(0xed48, fontFamily: _kFontFam, fontPackage: _kFontPkg);
@@ -116,6 +122,7 @@ class MyCustomIcons {
   static const IconData right_open_2 = IconData(0xedd1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData left_2 = IconData(0xedd3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData right_2 = IconData(0xedd4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData facebook_2 = IconData(0xee55, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData location_3 = IconData(0xee9a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData location_inv = IconData(0xee9b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData location_alt = IconData(0xee9c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
@@ -126,6 +133,7 @@ class MyCustomIcons {
   static const IconData search_6 = IconData(0xef59, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData shop_1 = IconData(0xef5a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData pencil_5 = IconData(0xef5b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData facebook_circled = IconData(0xf051, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData angle_left = IconData(0xf104, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData angle_right = IconData(0xf105, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData dropbox = IconData(0xf16b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
@@ -137,4 +145,5 @@ class MyCustomIcons {
   static const IconData toggle_on = IconData(0xf205, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData shopping_bag = IconData(0xf290, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData shopping_basket = IconData(0xf291, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData facebook_squared_1 = IconData(0xf30e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }
